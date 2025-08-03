@@ -4,6 +4,21 @@
     <style>
         body {background-color: black;}
     </style>
+    <title>
+        click on it
+    </title>
 </head>
-<button type="button" onclick="document.location='comingsoon.html'">Continue</button>
+<div id="mydiv"><button type="button" id="continuebutton" onclick="
+
+document.getElementById('continuebutton').style.visibility = 'hidden';
+const paragaph = document.createElement('p')
+paragaph.textContent = 'Z2V0IGEgc25hY2sgYXQgNCBhLm0uIHJlY3JlYXRlZA=='
+paragaph.style.color = 'black'
+document.getElementById('mydiv').appendChild(paragaph)
+document.title = 'copy'
+let music = new Audio('comingsoon.ogg')
+music.loop=true
+music.play()
+
+">Continue</button></div>
 </html>
